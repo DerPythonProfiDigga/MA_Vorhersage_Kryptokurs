@@ -6,8 +6,8 @@ import json
 import requests
 
 ZeitInterval = '1h'
-start_str =  ' Dec 2022 00:00:00 UTC'
-end_str = ' Dec 2022 23:59:59 UTC'
+start_str =  '1 Dec 2022 00:00:00 UTC'
+end_str = '14 Dec 2022 23:59:59 UTC'
 
 # Verbinden mit BinanceAPI
 client = Client('API Key',
