@@ -10,7 +10,8 @@ start_str =  ' Dec 2022 00:00:00 UTC'
 end_str = ' Dec 2022 23:59:59 UTC'
 
 # Verbinden mit BinanceAPI
-client = Client('83AErTjgxkHNPEB4FyUe7fD8dGXZScIQ2Fw5gneHWZYHNgs9WoE8HJxWVrPEOco4', 'PHZAwfDNxHL5rfpgbFh97CpUrx5sEIjVS1HuQEkIBeTmaGpFS8m3vsNI4xPb7bRr')
+client = Client('API Key',
+                    'Secret Key')
 info = client.get_exchange_info()
 symbols = [x['symbol'] for x in info['symbols']]
 relevant = [symbol for symbol in symbols if symbol.endswith('USDT')]
